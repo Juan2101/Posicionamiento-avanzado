@@ -1,0 +1,236 @@
+body{
+    background-color: var(--color-gris-claro);
+    box-sizing: border-box;
+}
+
+/* header */
+
+header{
+    background-color: var(--color-amarillo);
+    font-size: 12px;
+}
+
+header section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 15px;
+    
+}
+
+header .logo{
+    width: 50%;
+    height: 50%;
+    display: inline;
+}
+
+header form{
+    display: flex;
+}
+
+header input{
+    width: 130px;
+    height: 20px;
+}
+
+header button{
+    width: 22px;
+    height: 22px;
+}
+
+header p{
+    text-align: center;
+    margin: 20px;
+}
+
+/* barra de navegacion */
+
+header nav{
+    display: none;
+}
+
+header nav ul{
+    margin-bottom: 25px;
+}
+
+header nav ul:last-child{
+    margin-bottom: 0;
+}
+
+.burger-menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.burger-menu i{
+    background-color: var(--color-azul);
+    border-radius: 5px;
+    color: #fff;
+    font-size: 23px;
+    margin-bottom: 17px;
+    padding: 10px;
+}
+
+/* main */
+
+main section{
+    margin: 0 auto;
+    width: 90%;
+}
+
+main h3{
+    font-size: 24px;
+    color: var(--color-gris-oscuro);
+    margin: 25px 0;
+}
+
+main article{
+    margin-bottom: 10px;
+    background-color: #fff;
+}
+
+main article img{
+    width: 100%;
+}
+
+main article div{
+    border-top: 1px solid var(--color-gris-claro);
+    padding: 15px;
+    position: relative;
+}
+
+main .precio{
+    display: inline-block;
+    width: 30%;
+    font-size: 18px;
+}
+
+main .descuento{
+    display: inline;
+    width: 70%;
+    font-size: 16px;
+    color: var(--color-verde);
+}
+
+main i{
+    color: var(--color-verde);
+    font-size: 20px;
+    padding: 5px;
+    border: 1px solid var(--color-verde);
+    border-radius: 50%;
+    background-color: #fff;
+    position: absolute;
+    right: 5%;
+    top: -23%;
+}
+
+main h4{
+    font-size: 16px;
+    font-weight: 300;
+    color: var(--color-gris-oscuro);
+    display: none;
+}
+
+/* footer */
+
+footer{
+    background-color: #fff;
+    padding: 50px 0 10px;
+}
+
+footer section{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+footer i{
+    color: var(--color-celeste);
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+footer h4, footer p{
+    color: var(--color-gris-oscuro);
+    margin: 5px 0;
+}
+
+footer section p{
+    font-size: 12px;
+    width: 250px;
+    margin: auto;
+}
+
+footer .copyright{
+    font-size: 12px;
+    margin: 15px;
+}
+
+@media (min-width: 361px){
+
+    /* header */
+
+    header section{
+        flex-wrap: nowrap;
+        margin-right: 20px;
+    }
+
+    header .barra-de-busqueda{
+        margin: 0 25px;
+    }
+
+    /* nav */
+
+    header nav{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    header ul{
+        display: flex;
+    }
+
+    header li{
+        margin: 25px 7px 0;
+    }
+
+    .burger-menu{
+        display: none;
+    }
+    
+    /* main */
+
+    main article{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        max-width: 340px;
+    }
+
+    main .contenedor{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    main h4{
+        display: block;
+    }
+}
+
+@media (min-width: 796px){
+    
+    main article{   
+        max-width: none;
+        margin-right: 15px;
+    }
+
+    main article:last-child{
+        margin-right: 0;
+    }
+
+    main .contenedor{
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+}

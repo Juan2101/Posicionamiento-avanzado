@@ -1,0 +1,16 @@
+@import url("general.css");
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url("home.css");
+
+*{
+    font-family: "Roboto";
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul, li a{
+    list-style-type: none;
+    text-decoration: none;
+    color: #000;
+}
